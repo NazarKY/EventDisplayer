@@ -3,5 +3,6 @@ class EventsController < ApplicationController
   end
 
   def show
+    @event = Event.preload(:players).last
   end
 end

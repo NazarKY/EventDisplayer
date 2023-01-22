@@ -17,3 +17,32 @@
 body {
     background: url('img/background/event.png') no-repeat center center fixed;
 }
+
+.event-container {
+    width: 1028px;
+    margin: 125px auto;
+}
+
+.event-container-header {
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 64px;
+    background: linear-gradient(#F8F9F9, #C7C8C7);
+    font-family: sans-serif;
+}
+
+.event-container-table {
+    width: 1028px;
+    background-color: #333333;
+    font-size: 34px;
+    font-family: sans-serif;
+    color: white;
+    border-collapse: collapse;
+}
+
+.event-container-table td {
+    padding: 7px;
+    border-bottom: 1px white solid;
+    margin: 0px;
+}
