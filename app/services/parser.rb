@@ -1,5 +1,3 @@
-require 'roo'
-
 class Parser
   attr_reader :data_arr
 

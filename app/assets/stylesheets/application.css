@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background: url('img/background/event.png') no-repeat center center fixed;
+}
