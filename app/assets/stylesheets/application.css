@@ -24,7 +24,7 @@ body {
 }
 
 .event-container-header {
-    padding: 16px;
+    padding: 10px 20px;
     color: black;
     font-weight: bold;
     font-size: 64px;
@@ -42,7 +42,42 @@ body {
 }
 
 .event-container-table td {
-    padding: 7px;
+    padding: 10px;
     border-bottom: 1px white solid;
     margin: 0px;
+}
+
+.event-container-header-text {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.event-container-header-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.entrant-place {
+    width: 10%;
+    text-align: right;
+}
+
+.entrant-prize-pool {
+    text-align: center;
+}
+
+.event-container-top-footer {
+    background: linear-gradient(#F8F9F9, #C7C8C7);
+    text-align: center;
+    font-size: 26px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+.event-container-footer {
+    background-image: url('img/container-footer-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
 }

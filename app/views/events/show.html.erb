@@ -1,18 +1,25 @@
 <div class="event-container">
   <div class="event-container-header">
-    <span><img src="/img/logo.png" alt="logo" width="211" height="63"></span>
-    <span><%= @event.name.sub(/.*?#/, '#') %></span>
+    <span class="event-container-header-logo"><img src="/img/logo.png" alt="logo" width="211" height="63"></span>
+    <span class="event-container-header-text"><%= @event.name.sub(/.*?#/, '#') %></span>
   </div>
+
   <table class="event-container-table">
     <tbody>
     <% @event.entrants.each do |entrant| %>
       <tr>
-        <td><%= entrant.place %></td>
-        <td><%= entrant.full_name %></td>
-        <td>$<%= entrant.prize_pool %></td>
+        <td class="entrant-place"><%= entrant.place %></td>
+        <td class="entrant-name"><%= entrant.full_name %></td>
+        <td class="entrant-prize-pool">$<%= entrant.prize_pool %></td>
       </tr>
     <% end %>
     </tbody>
   </table>
 
+  <div class="event-container-top-footer">
+    <%= @event.entrants_count %> ENTRIES - $<%= @event.prize_pool %> PRIZE POOL
+  </div>
+  <div class="event-container-footer">
+    <img src="/img/container-close-btn.png" alt="logo" width="166" height="166">
+  </div>
 </div>
