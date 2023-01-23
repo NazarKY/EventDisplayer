@@ -58,7 +58,7 @@ body {
 }
 
 .entrant-place {
-    width: 10%;
+    width: 14%;
     text-align: right;
 }
 
@@ -80,4 +80,8 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
+}
+
+.sequent-end {
+    font-size: 24px;
 }
