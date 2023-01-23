@@ -1,2 +1,25 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
+<div class="events-container">
+  <div class="event-container-header-logo"><img src="/img/logo.png" alt="logo" width="211" height="63"></div>
+  <table class="events-container-table">
+    <thead class="events-container-table-head">
+      <tr>
+        <th>Event Name</th>
+        <th>Prize</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td class="event-name">
+          <%= link_to event.name, "events/#{event.id}" %>
+        </td>
+        <td class="event-prize-pool"><%= humanize_money_amount(event.prize_pool) %></td>
+        <td class="event-date"><%= event.holding_date %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+  <div class="events-container-table-footer"></div>
+</div>

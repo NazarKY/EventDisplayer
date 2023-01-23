@@ -20,6 +20,8 @@
     <%= @event.entrants_count %> ENTRIES - <%= humanize_money_amount(@event.prize_pool) %> PRIZE POOL
   </div>
   <div class="event-container-footer">
-    <img src="/img/container-close-btn.png" alt="logo" width="166" height="166">
+    <a href="<%= events_path %>">
+      <img src="/img/container-close-btn.png" alt="logo" width="166" height="166">
+    </a>
   </div>
 </div>
