@@ -1,10 +1,12 @@
+require 'csv'
+
 class Parser
   attr_reader :data_arr
 
   DEFAULT_DIR = 'data/poker_tournaments.csv'.freeze
 
   def initialize(file_dir = DEFAULT_DIR)
-    @data_arr = CSV.open(file_dir).to_a
+    @data_arr = ::CSV.open(file_dir).to_a
   end
 
   def perform

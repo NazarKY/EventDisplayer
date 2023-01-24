@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_22_090545) do
   create_table "entrants", force: :cascade do |t|
-    t.string "full_name"
     t.float "points_qual"
     t.float "prize_pool"
     t.integer "place"
