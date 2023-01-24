@@ -10,4 +10,4 @@ rake db:create db:migrate db:seed
 ```
 rails s
 ```
-and visit `http://localhost:3000/`
+go to `http://localhost:3000/` and click at any of the event name
